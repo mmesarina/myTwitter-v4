@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewTweetViewController">
+            <connections>
+                <outlet property="tweetTextView" destination="upW-Ae-s2i" id="3aj-6F-IUl"/>
+                <outlet property="userHandleLabel" destination="Th6-FE-HxW" id="Ybn-eG-Yco"/>
+                <outlet property="userNameLabel" destination="1Ql-LG-IAH" id="rNQ-GQ-GGZ"/>
+                <outlet property="userPhoto" destination="yZF-Tk-E4a" id="7FC-kU-4cW"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-Tk-E4a">
+                    <rect key="frame" x="15" y="74" width="48" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="48" id="BMe-Mw-42x"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ql-LG-IAH">
+                    <rect key="frame" x="78" y="74" width="85" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="uL7-cL-D7v"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Th6-FE-HxW">
+                    <rect key="frame" x="78" y="92" width="85" height="12"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="Ba5-g6-8AD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et " translatesAutoresizingMaskIntoConstraints="NO" id="upW-Ae-s2i">
+                    <rect key="frame" x="15" y="135" width="285" height="81"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="81" id="mKK-48-NHM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="upW-Ae-s2i" secondAttribute="trailing" constant="20" symbolic="YES" id="3tO-2v-aYX"/>
+                <constraint firstItem="yZF-Tk-E4a" firstAttribute="top" secondItem="1" secondAttribute="top" constant="74" id="50A-sm-iX9"/>
+                <constraint firstItem="1Ql-LG-IAH" firstAttribute="leading" secondItem="yZF-Tk-E4a" secondAttribute="trailing" constant="15" id="OjY-74-m04"/>
+                <constraint firstItem="Th6-FE-HxW" firstAttribute="top" secondItem="1Ql-LG-IAH" secondAttribute="bottom" constant="6" id="TjT-oU-fR2"/>
+                <constraint firstItem="yZF-Tk-E4a" firstAttribute="top" secondItem="1Ql-LG-IAH" secondAttribute="top" id="YHy-jq-haK"/>
+                <constraint firstItem="yZF-Tk-E4a" firstAttribute="centerY" secondItem="Th6-FE-HxW" secondAttribute="centerY" id="aHo-La-1Ry"/>
+                <constraint firstItem="1Ql-LG-IAH" firstAttribute="trailing" secondItem="Th6-FE-HxW" secondAttribute="trailing" id="iJg-dN-2S7"/>
+                <constraint firstItem="upW-Ae-s2i" firstAttribute="leading" secondItem="yZF-Tk-E4a" secondAttribute="leading" id="j38-P7-OsZ"/>
+                <constraint firstItem="upW-Ae-s2i" firstAttribute="top" secondItem="yZF-Tk-E4a" secondAttribute="bottom" constant="13" id="nlf-zW-HhN"/>
+                <constraint firstItem="Th6-FE-HxW" firstAttribute="leading" secondItem="1Ql-LG-IAH" secondAttribute="leading" id="r09-sJ-xgs"/>
+                <constraint firstItem="yZF-Tk-E4a" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="15" id="seO-O8-MSA"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
